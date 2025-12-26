@@ -1,0 +1,229 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif !important;
+}
+
+.primaryBtn {
+  border-radius: 100000px;
+  background-color: #3e6eb4;
+  color: white;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.navItem {
+  cursor: pointer;
+  color: #1e1c26;
+  font-family: "Manrope", sans-serif !important;
+}
+
+.activeNav {
+  color: #3e6eb4;
+  font-weight: 500;
+}
+.bgImg {
+  background-image: url("./assets/bgImg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.aboutUsBg {
+  background-image: url("./assets/aboutUsBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.industryBg {
+  background-image: url("./assets/industryBg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+.teamBlueBg {
+  background: #3e6eb4;
+  border-radius: 20px;
+}
+.productRightImgDiv {
+  background-image: url("./assets/productRightImgDiv.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+  height: 100%;
+  background-position: right;
+}
+.productLeftImgDiv {
+  background-image: url("./assets/industryBg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+  height: 100%;
+  background-position: left;
+}
+.heroGradient {
+  background: linear-gradient(90deg, #cd6028 11%, #3e6eb4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradientBg {
+  background: linear-gradient(90deg, #cd6028 11%, #3e6eb4 100%);
+  color: white;
+  font-weight: 700;
+}
+/* ******************** hero img rotation **********************  */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: clamp(230px, 45vw, 380px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+.doc {
+  position: absolute;
+  width: clamp(140px, 30vw, 260px);
+  height: auto;
+  border-radius: 12px;
+  filter: blur(3px) brightness(0.8);
+  transform-origin: center;
+  transition: 0.3s ease;
+  /* background-image: url("./assets/net.png"); */
+}
+
+/* positions */
+.img1 {
+  transform: translateX(-95%) scale(0.65);
+}
+.img2 {
+  transform: translateX(0) scale(1.35);
+  filter: blur(0);
+  z-index: 5;
+}
+.img3 {
+  transform: translateX(95%) scale(0.65);
+}
+
+/* animation link */
+.img1 {
+  animation: img1move 18s infinite ease-in-out;
+}
+.img2 {
+  animation: img2move 18s infinite ease-in-out;
+}
+.img3 {
+  animation: img3move 18s infinite ease-in-out;
+}
+
+/* ----------
+   KEYFRAMES
+----------*/
+@keyframes img1move {
+  0%,
+  22% {
+    transform: translateX(-95%) scale(0.65);
+    filter: blur(3px) brightness(0.8);
+    z-index: 1;
+  }
+  33%,
+  55% {
+    transform: translateX(95%) scale(0.65);
+    filter: blur(3px) brightness(0.8);
+    z-index: 1;
+  }
+  66%,
+  88% {
+    transform: translateX(0) scale(1.35);
+    filter: blur(0);
+    z-index: 5;
+  }
+  100% {
+    transform: translateX(-95%) scale(0.65);
+  }
+}
+@keyframes img2move {
+  0%,
+  22% {
+    transform: translateX(0) scale(1.35);
+    filter: blur(0);
+    z-index: 5;
+  }
+  33%,
+  55% {
+    transform: translateX(-95%) scale(0.65);
+    filter: blur(3px) brightness(0.8);
+    z-index: 1;
+  }
+  66%,
+  88% {
+    transform: translateX(95%) scale(0.65);
+    filter: blur(3px) brightness(0.8);
+    z-index: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1.35);
+  }
+}
+@keyframes img3move {
+  0%,
+  22% {
+    transform: translateX(95%) scale(0.65);
+    filter: blur(3px) brightness(0.8);
+    z-index: 1;
+  }
+  33%,
+  55% {
+    transform: translateX(0) scale(1.35);
+    filter: blur(0);
+    z-index: 5;
+  }
+  66%,
+  88% {
+    transform: translateX(-95%) scale(0.65);
+    filter: blur(3px) brightness(0.8);
+    z-index: 1;
+  }
+  100% {
+    transform: translateX(95%) scale(0.65);
+  }
+}
+
+/* ******************************************  */
+.slide-left {
+  animation: slideLeft 0.28s ease-in-out;
+  z-index: 10;
+}
+
+.slide-right {
+  animation: slideRight 0.28s ease-in-out;
+  z-index: 10;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
