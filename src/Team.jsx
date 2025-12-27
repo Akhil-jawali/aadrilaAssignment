@@ -8,14 +8,14 @@ import smallDots from './assets/smallDots.svg'
 const data = [
     {
         img: team1,
-        name: "MANSI SHUKLA",
-        title: "CEO FutureSphere",
+        name: "JOHN CARTER",
+        title: "CTO FutureSphere",
         desc: "For this time-constrained generation in a NOW economy, we would want to play our parts. We intend to make banking not feel out of place."
     },
     {
         img: team2,
-        name: "JOHN CARTER",
-        title: "CTO FutureSphere",
+        name: "MANSI SHUKLA",
+        title: "CEO FutureSphere",
         desc: "Driving innovation using AI & automation for operational excellence and compliance."
     },
     {
@@ -34,7 +34,7 @@ const Team = () => {
 
     return (
         <div className="industryBg">
-            <div className="flex flex-col gap-2 items-center">
+            <div className="flex flex-col gap-2 items-center md:px-10 px-5">
                 <p className="mt-3 text-3xl font-semibold md:text-5xl z-[15]">
                     Meet our team
                 </p>
@@ -58,7 +58,7 @@ const Team = () => {
                 </svg>
             </div>
 
-            <div className="w-full md:py-10 pt-5 pb-15 relative flex flex-col items-center">
+            <div className="w-full md:py-10 pt-5 pb-15 relative flex flex-col items-center md:px-10 px-5">
 
                 {/* Buttons */}
 

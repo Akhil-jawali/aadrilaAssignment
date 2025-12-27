@@ -1,16 +1,47 @@
-# React + Vite
+1. System Requirements
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+   Before starting, ensure the following are installed on your system:
 
-Currently, two official plugins are available:
+   Required Software
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   Node.js
 
-## React Compiler
+   npm (Node Package Manager) – comes bundled with Node.js
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   Verify Installation
 
-## Expanding the ESLint configuration
+   Run the following commands in a terminal to confirm installation:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   npm -v <!-- paste in Terminal -->
+
+2. Create a New React Application
+
+   Use Create React App to generate a new project:
+
+   npx create-react-app my-app <!-- paste in Terminal -->
+
+3. Navigate into the project directory:
+
+   cd my-app <!-- paste in Terminal -->
+
+4. Start the Application
+
+   To confirm the setup is working, start the development server:
+
+   npm start <!-- paste in Terminal -->
+
+   Once the server runs, open your browser and visit:
+
+   http://[Give Link]
+
+5. Install React Router
+
+   To enable navigation in your application, install React Router:
+
+   npm install react-router-dom <!-- paste in Terminal -->
+
+6. Test Navigation
+
+   Start the app:
+
+   npm start <!-- paste in Terminal -->

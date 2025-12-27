@@ -1,5 +1,5 @@
 import React from 'react'
-import blogBg from './assets/blogBg.png';
+import blogBg from './assets/blogBg.webp';
 const BlogList = ({ blog, index }) => {
     return (
         <div className="flex md:px-10 px-5 pb-7 relative w-full">
@@ -9,7 +9,7 @@ const BlogList = ({ blog, index }) => {
                 <p className="text-gray-600 manrope">{blog.description}</p>
             </div>
             <div className="absolute bottom-0 right-0 w-full h-20 z-[-1]">
-                <img src={blogBg} alt="blogBg" className="w-full h-full object-cover rounded-xl" />
+                <img src={blogBg} loading="lazy" alt="blogBg" className="w-full h-full object-cover rounded-xl" />
             </div>
         </div>
     )

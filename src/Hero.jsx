@@ -1,7 +1,7 @@
 import React from "react";
-import Invoice from "./assets/Invocie.png";
-import Doc from "./assets/Doc.png";
-import License from "./assets/License.png";
+import Invoice from "./assets/Invocie.webp";
+import Doc from "./assets/Doc.webp";
+import License from "./assets/License.webp";
 
 const Hero = () => {
     return (

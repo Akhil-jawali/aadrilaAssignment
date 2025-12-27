@@ -32,9 +32,9 @@ const industries = [
 const Industires = () => {
     return (
         <>
-            <div className="relative w-full md:mt-16 industryBg md:h-[100vh] h-[130vh] ">
-                <div className="md:px-10 px-5 md:pb-5 px-3 py-3">
-                    <div className="lg:flex flex-col z-20 hidden">
+            <div className="relative w-full md:mt-16 industryBg md:h-[100vh] ">
+                <div className="md:px-10 px-5 md:pb-5 md:pb-5 md:pt-0 pt-10 py-3">
+                    <div className="flex flex-col z-20">
                         <p className="md:text-2xl text-lg font-bold heroGradient manrope">
                             AI-driven innovation for growth.
                         </p>
@@ -42,7 +42,8 @@ const Industires = () => {
                             Industries We Empower
                         </p>
                     </div>
-                    <div className="absolute top-0 right-0 w-full lg:px-16 px-5 py-5">
+
+                    <div className="absolute top-0 right-0 w-full lg:px-16 px-5 py-5 md:block hidden">
                         <div className="flex lg:flex-row flex-col gap-5 w-full lg:h-[90vh]">
                             <div className="flex flex-col items-center z-20 lg:hidden mb-5">
                                 <p className="md:text-2xl text-lg font-bold heroGradient text-center manrope">
@@ -64,6 +65,21 @@ const Industires = () => {
                                 <img src={spaceDots} alt="dots" className="absolute bottom-[20px] right-0 z-10 w-[200px] lg:visible invisible" />
                                 <img src={smallDots} alt="dots" className="absolute lg:top-[30px] top-[0px] lg:left-[-60px] right-0 z-8 w-[150px]" />
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="md:hidden flex flex-col gap-5 w-full">
+                        <div className="w-full md:p-5 py-5 flex lg:flex-col justify-end">
+                            <IndustryCard name={industries[0].name} description={industries[0].description} img={industries[0].img} />
+                        </div>
+                        <div className="w-full md:p-5 py-5 flex lg:flex-col justify-center relative">
+                            <img src={smallDots} alt="dots" className="absolute top-[0px] left-[0px] z-8 w-[150px] lg:invisible visible" />
+                            <IndustryCard name={industries[1].name} description={industries[1].description} img={industries[1].img} />
+                        </div>
+                        <div className="w-full md:p-5 py-5 flex lg:flex-col justify-start relative">
+                            <IndustryCard name={industries[2].name} description={industries[2].description} img={industries[2].img} />
+                            <img src={spaceDots} alt="dots" className="absolute bottom-[20px] right-0 z-10 w-[200px] lg:visible invisible" />
+                            <img src={smallDots} alt="dots" className="absolute lg:top-[30px] top-[0px] lg:left-[-60px] right-0 z-8 w-[150px]" />
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,7 @@
 const ProductListCard = ({ img, colorBtn, title, index, features, benefits }) => {
     return (
         <div>
-            <div className={`${index % 2 !== 0 ? 'productLeftImgDiv' : 'productRightImgDiv'} md:px-10 px-5 grid grid-cols-1 md:grid-cols-2 gap-6 items-center pt-10 pb-5`}>
+            <div className={`${index % 2 !== 0 ? 'productLeftImgDiv' : 'productRightImgDiv'} md:px-10 px-5 grid grid-cols-1 md:grid-cols-2 gap-6 items-center md:pt-10 pt-5 pb-5`}>
                 <div className="flex flex-col gap-5 md:w-4/5 w-full">
                     <div className="flex">
                         <button className="gradientBg rounded-full px-5 py-2 md:text-xl text-sm w-auto manrope">{colorBtn}</button>
@@ -39,7 +39,7 @@ const ProductListCard = ({ img, colorBtn, title, index, features, benefits }) =>
                 </div>
                 <div className={`${index % 2 !== 0 ? 'md:order-first' : ''} flex items-center justify-center`}>
                     <div className="w-4/5 flex items-center justify-center">
-                        <img src={img} alt="productImg" className='rounded-xl z-[11] w-9/10' />
+                        <img src={img} alt="productImg" loading="lazy" className='rounded-xl z-[11] w-9/10' />
                     </div>
                 </div>
             </div >

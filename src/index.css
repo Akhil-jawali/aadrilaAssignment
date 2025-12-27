@@ -27,7 +27,7 @@
   font-weight: 500;
 }
 .bgImg {
-  background-image: url("./assets/bgImg.png");
+  background-image: url("./assets/bgImg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,14 +35,14 @@
 }
 
 .aboutUsBg {
-  background-image: url("./assets/aboutUsBg.png");
+  background-image: url("./assets/aboutUsBg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
 }
 .industryBg {
-  background-image: url("./assets/industryBg.png");
+  background-image: url("./assets/industryBg.webp");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 11;
@@ -52,7 +52,7 @@
   border-radius: 20px;
 }
 .productRightImgDiv {
-  background-image: url("./assets/productRightImgDiv.png");
+  background-image: url("./assets/productRightImgDiv.webp");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 10;
@@ -60,7 +60,7 @@
   background-position: right;
 }
 .productLeftImgDiv {
-  background-image: url("./assets/industryBg.png");
+  background-image: url("./assets/industryBg.webp");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 10;

@@ -1,12 +1,12 @@
-import productImg0 from './assets/productImg-0.png'
-import productImg1 from './assets/productImg-1.png'
-import productImg2 from './assets/productImg-2.png'
+import productImg0 from './assets/productImg-0.webp'
+import productImg1 from './assets/productImg-1.webp'
+import productImg2 from './assets/productImg-2.webp'
 import ProductListCard from './ProductListCard';
 import spaceDots from './assets/spaceDots.svg'
 
 const Products = () => {
     return (
-        <div className='md:py-5 pt-16 pb-7'>
+        <div className='md:py-5 py-7'>
             <div className="flex flex-col items-center relative">
                 <img src={spaceDots} alt="dots" className="absolute top-[0] left-[30px] z-10 w-[200px] lg:visible invisible" />
                 <p className="md:text-2xl text-lg font-bold heroGradient manrope">
