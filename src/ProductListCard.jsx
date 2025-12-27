@@ -1,4 +1,3 @@
-
 const ProductListCard = ({ img, colorBtn, title, index, features, benefits }) => {
     return (
         <div>
@@ -38,13 +37,13 @@ const ProductListCard = ({ img, colorBtn, title, index, features, benefits }) =>
                         <button className="primaryBtn md:text-base text-sm w-full md:px-5 py-2 px-2">Schedule a Demo</button>
                     </div>
                 </div>
-                <div className={`${index % 2 !== 0 ? 'md:order-first' : ''} flex items-center justify-center`}>
-                    <div className="lg:w-4/5 w-full flex items-center justify-center">
+                <div className={`${index % 2 !== 0 ? 'md:order-first justify-start' : 'justify-end'} flex items-center`}>
+                    <div className={`${index % 2 !== 0 ? 'justify-start' : 'justify-end'} lg:w-4/5 w-full flex items-center justify-end`} >
                         <img src={img} alt="productImg" loading="lazy" className='rounded-xl z-[11] lg:w-9/10 w-full' />
                     </div>
                 </div>
-            </div >
-        </div >
+            </div>
+        </div>
     )
 }
 
