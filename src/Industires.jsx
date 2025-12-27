@@ -33,7 +33,7 @@ const Industires = () => {
     return (
         <>
             <div className="relative w-full md:mt-16 industryBg md:h-[100vh] ">
-                <div className="md:px-10 px-5 md:pb-5 md:pb-5 md:pt-0 pt-10 py-3">
+                <div className="md:px-10 px-5 md:pb-5 md:pb-5 md:pt-0 pt-10">
                     <div className="flex flex-col z-20">
                         <p className="md:text-2xl text-lg font-bold heroGradient manrope">
                             AI-driven innovation for growth.
