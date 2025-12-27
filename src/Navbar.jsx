@@ -37,7 +37,7 @@ export default function Navbar() {
                             </Link>
                         ))}
                     </div>
-                    <button className="primaryBtn md:text-base text-sm md:px-5 py-2 px-2">
+                    <button className="primaryBtn lg:text-base text-sm md:px-5 py-2 px-2">
                         Get a Demo
                     </button>
                 </div>

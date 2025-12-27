@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactUsPopUp = () => {
     return (
-        <div className="md:absolute md:top-0 md:right-0 md:w-1/2 rounded-lg">
+        <div className="md:absolute md:top-0 md:right-0 md:w-1/2 rounded-lg lg:px-10 md:px-5 px-0">
             <div className="flex items-center justify-center">
                 <div className="bg-white md:px-8 py-10 p-3 w-full max-w-xl rounded-xl" style={{ 'box-shadow': '0px 0px 20px 0px #0000001F' }}>
                     < div className="flex flex-col gap-5">

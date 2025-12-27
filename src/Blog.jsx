@@ -63,14 +63,14 @@ const Blog = () => {
                 </div>
 
                 {/* MOBILE */}
-                <div className="md:hidden flex justify-center py-4 overflow-hidden">
+                <div className="lg:hidden flex justify-center py-4 overflow-hidden">
                     <div key={animKey} className={`w-full max-w-[450px] slide-${dir}`}>
                         <BlogList blog={blogList[index]} index={index} />
                     </div>
                 </div>
 
                 {/* DESKTOP */}
-                <div className="hidden md:flex justify-center w-full overflow-hidden md:py-7 py-4 relative">
+                <div className="hidden lg:flex justify-center w-full overflow-hidden md:py-7 py-4 relative">
                     <div key={animKey} className={`grid grid-cols-3 gap-6 w-full slide-${dir}`}>
                         {visibleBlogs.map((blog, idx) => (
                             <BlogList blog={blog} index={idx} key={idx} />

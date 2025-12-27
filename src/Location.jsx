@@ -9,7 +9,7 @@ const Location = ({ title, address }) => {
                 <span className='font-bold underline'>{title}</span>
             </div>
             {address.map((addr, index) => (
-                <p key={index} className="text-sm manrope">
+                <p key={index} className="text-sm manrope lg:w-full w-3/4">
                     {addr}
                 </p>
             ))}

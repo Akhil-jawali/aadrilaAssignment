@@ -58,15 +58,15 @@ const Team = () => {
                 </svg>
             </div>
 
-            <div className="w-full md:py-10 pt-5 pb-15 relative flex flex-col items-center md:px-10 px-5">
+            <div className="w-full lg:py-10 pt-5 pb-15 relative flex flex-col items-center md:px-10 px-5">
 
                 {/* Buttons */}
 
                 {/* IMAGE ROW SECTION */}
-                <div className="relative w-full flex justify-center gap-14 md:gap-20 items-start h-[45vh] md:h-[65vh]">
+                <div className="relative w-full flex justify-center gap-14 md:gap-20 items-start h-[300px] md:h-[320px] lg:h-[450px]">
 
                     {/* MOBILE (ONLY ACTIVE PROFILE VISIBLE) */}
-                    <div className="flex md:hidden flex-col items-center">
+                    <div className="flex lg:hidden flex-col items-center">
                         <img
                             src={data[index].img}
                             className="w-36 h-36 rounded-full border-4 border-white shadow-xl transition-all duration-500"
@@ -80,7 +80,7 @@ const Team = () => {
                     </div>
 
                     {/* LARGE SCREENS (3 PROFILES VISIBLE) */}
-                    <div className="hidden md:flex justify-center gap-20 items-center relative">
+                    <div className="hidden lg:flex justify-center gap-20 items-center relative">
                         {data.map((member, i) => (
                             <div key={i} className="relative flex flex-col items-center justify-start">
                                 <img

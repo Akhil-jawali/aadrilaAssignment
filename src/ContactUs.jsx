@@ -14,7 +14,7 @@ const ContactUs = () => {
                     <p className="text-3xl font-semibold md:text-5xl">
                         Contact Us
                     </p>
-                    <p className="text-xl heroGradient md:w-1/2 w-full pt-5 manrope">
+                    <p className="text-xl heroGradient lg:w-1/2 md:w-2/5 w-full w-full pt-5 manrope">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                     </p>
                     <div className="flex flex-col gap-5 pt-9 md:w-1/2 w-full">
